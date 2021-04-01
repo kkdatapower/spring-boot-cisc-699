@@ -4,6 +4,7 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
+      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
       - mvn clean package
   post_build:
     commands:
