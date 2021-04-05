@@ -8,12 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
 
-	
 	@GetMapping("/hello")
 	public ResponseEntity<String> getStudents() {
-		
-		return new ResponseEntity<>("Hello World", HttpStatus.OK);
+
+		return new ResponseEntity<>("Hello World again", HttpStatus.OK);
 	}
 
-	
 }
