@@ -11,7 +11,7 @@ public class StudentController {
 	@GetMapping("/hello")
 	public ResponseEntity<String> getStudents() {
 
-		return new ResponseEntity<>("Hello World again again", HttpStatus.OK);
+		return new ResponseEntity<>("Hello World", HttpStatus.OK);
 	}
 
 }
