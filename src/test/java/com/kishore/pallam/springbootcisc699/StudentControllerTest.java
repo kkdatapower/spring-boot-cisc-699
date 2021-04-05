@@ -43,7 +43,7 @@ public class StudentControllerTest {
 		
 
 		mockMvc.perform(MockMvcRequestBuilders.get("/hello")).andExpect(MockMvcResultMatchers.status().is(200))
-        .andExpect(MockMvcResultMatchers.content().string("Hello World again again"))
+        .andExpect(MockMvcResultMatchers.content().string("Hello World"))
         .andExpect(MockMvcResultMatchers.header().string("Content-Type", "text/plain;charset=UTF-8"));
         //.andExpect(MockMvcResultMatchers.header().string("Content-Length", "19"));
     
